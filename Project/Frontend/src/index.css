@@ -1,0 +1,1286 @@
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f3f6fa;
+  color: #333;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+
+/* =========================================================
+   WELCOME PAGE
+   ========================================================= */
+
+.welcome-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: linear-gradient(135deg, #eaf3ff, #f7fbff);
+}
+
+.welcome-box {
+  width: 100%;
+  max-width: 650px;
+  padding: 55px 40px;
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-logo {
+  display: block;
+  width: 120px !important;
+  height: 120px !important;
+  max-width: 120px !important;
+  object-fit: contain;
+  margin: 0 auto 25px;
+}
+
+.welcome-box h1 {
+  color: #17477f;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.welcome-box p {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.get-started-button {
+  padding: 14px 35px;
+  border: none;
+  border-radius: 8px;
+  background: #17477f;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.get-started-button:hover {
+  background: #0e345f;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   LOGIN PAGE
+   ========================================================= */
+
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: linear-gradient(135deg, #edf5ff, #f8fbff);
+}
+
+.login-box {
+  width: 100%;
+  max-width: 470px;
+  padding: 40px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+}
+
+.login-logo {
+  display: block;
+  width: 90px !important;
+  height: 90px !important;
+  max-width: 90px !important;
+  object-fit: contain;
+  margin: 0 auto 15px;
+}
+
+.login-box h1 {
+  text-align: center;
+  color: #17477f;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login-box form > label {
+  margin-top: 12px;
+  margin-bottom: 6px;
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+  width: 100%;
+  height: 45px;
+  padding: 0 13px;
+  border: 1px solid #ccd4df;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.login-box input[type="email"]:focus,
+.login-box input[type="password"]:focus {
+  border-color: #17477f;
+  box-shadow: 0 0 0 3px rgba(23, 71, 127, 0.1);
+}
+
+
+/* Login radio buttons */
+
+.login-options {
+  display: flex;
+  gap: 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.login-options label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-options input {
+  cursor: pointer;
+}
+
+
+/* Remember / Forgot */
+
+.login-extra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0 20px;
+  font-size: 14px;
+}
+
+.login-extra label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.login-extra input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.forgot-button {
+  border: none;
+  background: none;
+  color: #17477f;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.forgot-button:hover {
+  text-decoration: underline;
+}
+
+
+/* Login button */
+
+.login-button {
+  width: 100%;
+  height: 46px;
+  border: none;
+  border-radius: 8px;
+  background: #17477f;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.login-button:hover {
+  background: #0e345f;
+}
+
+
+/* Register */
+
+.register-text {
+  text-align: center;
+  margin-top: 22px;
+  color: #555;
+  font-size: 14px;
+}
+
+.register-button {
+  border: none;
+  background: none;
+  color: #17477f;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.register-button:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   JOB SEEKER + RECRUITER DASHBOARD
+   ========================================================= */
+
+.candidate-dashboard {
+  min-height: 100vh;
+  display: flex;
+  background: #f3f6fa;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   Works for both Job Seeker and Recruiter
+   ========================================================= */
+
+.candidate-sidebar {
+  width: 250px;
+  min-height: 100vh;
+  padding: 25px 15px;
+  background: #173f7a;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.sidebar-title {
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 10px 12px 25px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 20px;
+}
+
+.sidebar-menu button {
+  width: 100%;
+  padding: 12px 13px;
+  border: none;
+  border-radius: 7px;
+  background: transparent;
+  color: white;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.sidebar-menu button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.sidebar-menu .active-menu {
+  background: white;
+  color: #173f7a;
+  font-weight: bold;
+}
+
+
+/* Logout */
+
+.logout-button {
+  margin-top: auto;
+  padding: 12px;
+  border: none;
+  border-radius: 7px;
+  background: #dc3545;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background: #b92d3a;
+}
+
+
+/* =========================================================
+   DASHBOARD MAIN AREA
+   ========================================================= */
+
+.candidate-main {
+  width: calc(100% - 250px);
+  margin-left: 250px;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.dashboard-header {
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  color: #173f7a;
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.dashboard-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   DASHBOARD CARDS
+   ========================================================= */
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+  transition: 0.2s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+}
+
+.card-icon {
+  font-size: 35px;
+  margin-bottom: 12px;
+}
+
+.dashboard-card h2 {
+  color: #173f7a;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.dashboard-card p {
+  color: #666;
+  line-height: 1.5;
+  font-size: 14px;
+  min-height: 65px;
+}
+
+.dashboard-card button {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 7px;
+  background: #17477f;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dashboard-card button:hover {
+  background: #0e345f;
+}
+
+
+/* =========================================================
+   COMMON INNER PAGES
+   ========================================================= */
+
+.simple-page,
+.resume-upload-page,
+.resume-analysis-page {
+  min-height: 100vh;
+  padding: 35px 20px;
+  background: #f3f6fa;
+}
+
+.simple-page-container,
+.resume-upload-container,
+.resume-analysis-container {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 40px 50px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Back button */
+
+.back-dashboard-button {
+  display: inline-block;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #173f7a;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.back-dashboard-button:hover {
+  background: #0e315f;
+}
+
+
+/* Page icons */
+
+.simple-page-icon,
+.resume-page-icon,
+.analysis-page-icon {
+  text-align: center;
+  font-size: 55px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+
+/* Page headings */
+
+.simple-page-container > h1,
+.resume-upload-container > h1,
+.resume-analysis-container > h1 {
+  text-align: center;
+  color: #17477f;
+  font-size: 38px;
+  margin: 10px 0 12px;
+}
+
+.simple-page-container > p,
+.resume-upload-container > p,
+.resume-analysis-container > p {
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   COMMON ACTION BUTTON
+   ========================================================= */
+
+.page-action-button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #118c9b;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.page-action-button:hover {
+  background: #0b7480;
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   POST JOB
+   ========================================================= */
+
+.application-form {
+  width: 100%;
+  max-width: 700px;
+  margin: 30px auto 0;
+  display: flex !important;
+  flex-direction: column !important;
+  text-align: left;
+}
+
+.application-form label {
+  display: block !important;
+  width: 100%;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  color: #243b64;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.application-form input,
+.application-form select,
+.application-form textarea {
+  display: block !important;
+  width: 100% !important;
+  padding: 0 14px;
+  border: 1px solid #d4dbe7;
+  border-radius: 8px;
+  background: white;
+  color: #333;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.application-form input,
+.application-form select {
+  height: 46px;
+}
+
+.application-form textarea {
+  min-height: 120px;
+  padding-top: 13px;
+  resize: vertical;
+}
+
+.application-form input::placeholder,
+.application-form textarea::placeholder {
+  color: #999;
+}
+
+.application-form input:focus,
+.application-form select:focus,
+.application-form textarea:focus {
+  border-color: #17477f;
+  box-shadow: 0 0 0 3px rgba(23, 71, 127, 0.1);
+}
+
+.application-form select {
+  cursor: pointer;
+}
+
+.application-form .page-action-button {
+  display: block;
+  width: 200px !important;
+  height: 48px;
+  margin: 28px auto 10px;
+}
+
+
+/* =========================================================
+   JOB / CANDIDATE CARDS
+   ========================================================= */
+
+.job-card {
+  margin-top: 22px;
+  padding: 25px;
+  background: #f8fbff;
+  border: 1px solid #dbe5f0;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.job-card h2 {
+  color: #17477f;
+  margin-bottom: 12px;
+}
+
+.job-card p {
+  color: #555;
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.job-card .page-action-button {
+  margin-top: 12px;
+}
+
+
+/* =========================================================
+   JOB DETAILS
+   ========================================================= */
+
+.job-detail-box {
+  max-width: 700px;
+  margin: 30px auto 0;
+  padding: 28px;
+  background: #f8fbff;
+  border: 1px solid #dbe5f0;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.job-detail-box h2 {
+  color: #17477f;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.job-detail-box p {
+  margin: 12px 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+.job-detail-box .page-action-button {
+  margin-top: 15px;
+}
+
+
+/* =========================================================
+   SUCCESS MESSAGE
+   ========================================================= */
+
+.resume-success-message {
+  max-width: 600px;
+  margin: 15px auto;
+  padding: 13px;
+  border-radius: 8px;
+  background: #e7f8ed;
+  color: #218838;
+  font-weight: bold;
+}
+
+
+/* =========================================================
+   RESUME UPLOAD
+   ========================================================= */
+
+.resume-upload-container {
+  text-align: center;
+}
+
+.resume-page-description {
+  margin-bottom: 25px;
+}
+
+.hidden-file-input {
+  display: none;
+}
+
+.choose-resume-button {
+  display: inline-block;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #17477f;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.choose-resume-button:hover {
+  background: #0e345f;
+}
+
+.file-format-text {
+  margin-top: 12px;
+  color: #777 !important;
+  font-size: 14px !important;
+}
+
+.selected-resume-box {
+  max-width: 600px;
+  margin: 25px auto;
+  padding: 18px;
+  background: #f1f6fc;
+  border: 1px solid #d5e1ef;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.selected-resume-box h3 {
+  color: #17477f;
+  margin-bottom: 7px;
+}
+
+.selected-resume-box p {
+  color: #555;
+  word-break: break-word;
+}
+
+.upload-submit-button {
+  display: block;
+  margin: 20px auto;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #118c9b;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.upload-submit-button:disabled {
+  background: #b8c1ca;
+  cursor: not-allowed;
+}
+
+.resume-action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.replace-resume-button,
+.remove-resume-button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.replace-resume-button {
+  background: #f0a202;
+}
+
+.replace-resume-button:hover {
+  background: #d58e00;
+}
+
+.remove-resume-button {
+  background: #dc3545;
+}
+
+.remove-resume-button:hover {
+  background: #b92d3a;
+}
+
+.analyze-resume-button {
+  padding: 13px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #17477f;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.analyze-resume-button:disabled {
+  background: #b8c1ca;
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   RESUME ANALYSIS
+   ========================================================= */
+
+.resume-analysis-container {
+  text-align: center;
+}
+
+.resume-analysis-container > p {
+  margin-bottom: 25px;
+}
+
+.analysis-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+  padding: 16px 18px;
+  border: 1px solid #d8e0ea;
+  border-radius: 9px;
+  background: #f8fafc;
+  color: #173f7a;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.analysis-button:hover {
+  background: #edf4fc;
+}
+
+.analysis-button strong {
+  flex: 1;
+}
+
+.analysis-arrow {
+  font-size: 14px;
+}
+
+.analysis-details {
+  width: 100%;
+  padding: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background: #f7faff;
+  border: 1px solid #dce6f2;
+  border-radius: 9px;
+  text-align: left;
+}
+
+.analysis-details h3 {
+  color: #17477f;
+  margin-bottom: 15px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-list span {
+  padding: 8px 13px;
+  background: #e8f1ff;
+  color: #17477f;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.education-info,
+.experience-info {
+  line-height: 1.7;
+}
+
+.education-info h4,
+.experience-info h4 {
+  color: #17477f;
+  margin-bottom: 8px;
+}
+
+.certification-list p {
+  padding: 7px 0;
+}
+
+.project-item {
+  padding: 15px;
+  margin-bottom: 10px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e6ed;
+}
+
+.project-item h4 {
+  color: #17477f;
+  margin-bottom: 6px;
+}
+
+
+/* =========================================================
+   SKILL GAP
+   ========================================================= */
+
+.skill-gap-list {
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.skill-gap-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 20px;
+  margin-bottom: 12px;
+  background: #f8fbff;
+  border: 1px solid #dbe5f0;
+  border-radius: 9px;
+}
+
+.skill-gap-item strong {
+  color: #17477f;
+}
+
+.skill-gap-item span {
+  padding: 6px 12px;
+  border-radius: 15px;
+  background: #fff1e6;
+  color: #d66a00;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
+/* =========================================================
+   LEARNING RESOURCES
+   ========================================================= */
+
+.learning-card {
+  margin-top: 20px;
+  padding: 23px;
+  background: #f8fbff;
+  border: 1px solid #dbe5f0;
+  border-radius: 11px;
+  text-align: left;
+}
+
+.learning-card h2 {
+  color: #17477f;
+  margin-bottom: 10px;
+}
+
+.learning-card p {
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.learning-detail-box {
+  max-width: 700px;
+  margin: 30px auto 0;
+  padding: 30px;
+  background: #f8fbff;
+  border: 1px solid #dbe5f0;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.learning-detail-box h2 {
+  color: #17477f;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.learning-detail-box h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.learning-detail-box ul {
+  padding-left: 25px;
+  margin-bottom: 25px;
+}
+
+.learning-detail-box li {
+  margin-bottom: 10px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.course-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   PROFILE
+   ========================================================= */
+
+.profile-box {
+  max-width: 700px;
+  margin: 30px auto;
+  border: 1px solid #dbe5f0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 20px;
+  border-bottom: 1px solid #e4e9ef;
+  background: white;
+}
+
+.profile-row:last-child {
+  border-bottom: none;
+}
+
+.profile-row strong {
+  color: #17477f;
+  min-width: 120px;
+}
+
+.profile-row span {
+  color: #555;
+  text-align: right;
+}
+
+
+/* =========================================================
+   RECRUITER SPECIFIC
+   ========================================================= */
+
+.recruiter-job-description {
+  width: 100%;
+  min-height: 120px;
+  padding: 14px;
+  border: 1px solid #d4dbe7;
+  border-radius: 8px;
+  resize: vertical;
+  font-size: 15px;
+  outline: none;
+}
+
+.recruiter-job-description:focus {
+  border-color: #17477f;
+  box-shadow: 0 0 0 3px rgba(23, 71, 127, 0.1);
+}
+
+
+/* Candidate match score */
+
+.match-score {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 7px 13px;
+  border-radius: 20px;
+  background: #e7f8ed;
+  color: #218838;
+  font-weight: bold;
+}
+
+
+/* Shortlisted */
+
+.shortlisted-badge {
+  display: inline-block;
+  padding: 7px 13px;
+  border-radius: 20px;
+  background: #fff4d6;
+  color: #a56b00;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .dashboard-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .simple-page-container,
+  .resume-upload-container,
+  .resume-analysis-container {
+    padding: 35px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  /* Welcome */
+
+  .welcome-page {
+    padding: 15px;
+  }
+
+  .welcome-box {
+    padding: 40px 25px;
+  }
+
+  .welcome-logo {
+    width: 100px !important;
+    height: 100px !important;
+    max-width: 100px !important;
+  }
+
+  .welcome-box h1 {
+    font-size: 28px;
+  }
+
+  .welcome-box p {
+    font-size: 16px;
+  }
+
+
+  /* Login */
+
+  .login-page {
+    padding: 15px;
+  }
+
+  .login-box {
+    padding: 30px 22px;
+  }
+
+  .login-logo {
+    width: 75px !important;
+    height: 75px !important;
+    max-width: 75px !important;
+  }
+
+  .login-box h1 {
+    font-size: 26px;
+  }
+
+  .login-options {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .login-extra {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+
+  /* Dashboard */
+
+  .candidate-dashboard {
+    display: block;
+  }
+
+  .candidate-sidebar {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .candidate-main {
+    width: 100%;
+    margin-left: 0;
+    padding: 25px 15px;
+  }
+
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-header h1 {
+    font-size: 28px;
+  }
+
+
+  /* Common pages */
+
+  .simple-page,
+  .resume-upload-page,
+  .resume-analysis-page {
+    padding: 15px 10px;
+  }
+
+  .simple-page-container,
+  .resume-upload-container,
+  .resume-analysis-container {
+    padding: 25px 18px;
+    border-radius: 12px;
+  }
+
+  .simple-page-container > h1,
+  .resume-upload-container > h1,
+  .resume-analysis-container > h1 {
+    font-size: 30px;
+  }
+
+  .simple-page-container > p,
+  .resume-upload-container > p,
+  .resume-analysis-container > p {
+    font-size: 16px;
+  }
+
+
+  /* Resume */
+
+  .resume-action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .replace-resume-button,
+  .remove-resume-button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+
+  /* Job details */
+
+  .job-detail-box {
+    padding: 20px;
+  }
+
+
+  /* Skill gap */
+
+  .skill-gap-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+
+  /* Profile */
+
+  .profile-row {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .profile-row span {
+    text-align: left;
+  }
+
+
+  /* Forms */
+
+  .application-form {
+    max-width: 100%;
+  }
+
+  .application-form .page-action-button {
+    width: 100% !important;
+  }
+
+
+  /* Back button */
+
+  .back-dashboard-button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
